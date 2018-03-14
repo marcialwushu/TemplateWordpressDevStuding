@@ -29,33 +29,23 @@
 							<div class="post-heading">
 								<h3><a href="<?php the_permalink(); ?>"><?php The_title(); ?></a></h3>
 							</div>
-							<img src="<?php bloginfo('template_url'); ?>img/dummies/blog/img1.jpg" alt="" />
+							<?php the_post_thumbnail(); ?>
 						</div>
 						<p>
-							 <?php echo substr(get_the_excerpt(),0,300); ?>
+							 <?php the_content(); ?>
 						</p>
-						<div class="bottom-article">
-							<ul class="meta-post">
-								<li><i class="icon-calendar"></i><a href="#"><?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?> </a></li>
-								<li><i class="icon-user"></i><a href="#"><?php the_author(); ?></a></li>
-								<li><i class="icon-folder-open"></i><a href="#"><?php the_category(); ?></a></li>
-								
-							</ul>
-							<a href="<?php the_permalink(); ?>" class="pull-right">Continue reading <i class="icon-angle-right"></i></a>
-						</div>
+						
 				</article>
 
 				<?php endwhile;
-				endif;
+                endif;
+                
+                    
+
 				?>
 				
 				
-				<div id="pagination">
-					<span class="all">Page 1 of 3</span>
-					<span class="current">1</span>
-					<a href="#" class="inactive">2</a>
-					<a href="#" class="inactive">3</a>
-				</div>
+				
 			</div>
 			<div class="col-lg-4">
 				<aside class="right-sidebar">
