@@ -47,16 +47,24 @@
 
 				<?php endwhile;
 				endif;
-				next_posts_link(">> Next Posts");
-				previous_posts_link("<< Previous Posts");
+				//next_posts_link(">> Next Posts");
+				//previous_posts_link("<< Previous Posts");
 				?>
 				
 				
 				<div id="pagination">
-					<span class="all">Page 1 of 3</span>
-					<span class="current">1</span>
-					<a href="#" class="inactive">2</a>
-					<a href="#" class="inactive">3</a>
+				<?php //the_posts_pagination(); 
+						the_posts_pagination(
+							array(
+								'mid_size' => '2',
+								'prev_text' => 'Previous Posts',
+								'next_text' => 'Next Posts',
+								'screenreader_text' => 'Numbered Pagination'
+							)
+						);
+					
+					
+				?>
 				</div>
 			</div>
 			<div class="col-lg-4">
