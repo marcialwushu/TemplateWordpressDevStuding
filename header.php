@@ -34,7 +34,18 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><span>M</span>oderna</a>
+                    <?php 
+                    
+                    $custom_logo_id = get_theme_mod('custom-logo');
+                    $image = wp_get_attachment_image_src($custom_logo_id,'full');
+                    $image[0];
+                    
+                    ?>
+
+                    <img src="<?php echo $image[0]; ?>">
+
+
+                    <?php /*<a class="navbar-brand" href="index.html"><span>M</span>oderna</a> */?>
                 </div>   
                 
                 <div class="navbar-collapse collapse">
