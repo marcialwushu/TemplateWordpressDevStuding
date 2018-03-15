@@ -47,6 +47,8 @@
 
 				<?php endwhile;
 				endif;
+				next_posts_link(">> Next Posts");
+				previous_posts_link("<< Previous Posts");
 				?>
 				
 				
