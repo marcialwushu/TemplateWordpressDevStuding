@@ -18,8 +18,12 @@
 			<div class="col-lg-8">
 
 
-			<?php if( have_posts()): 
-					while( have_posts()): the_post();
+			<?php 
+					$custom_query = new WP_Query('type=post&posts_per_page');
+						
+			
+			if( $custom_query -> have_posts()): 
+					while( $custom_query -> have_posts()): $custom_query -> the_post();
 			
 					
 			
@@ -29,7 +33,7 @@
 							<div class="post-heading">
 								<h3><a href="<?php the_permalink(); ?>"><?php The_title(); ?></a></h3>
 							</div>
-							<img src="<?php bloginfo('template_url'); ?>img/dummies/blog/img1.jpg" alt="" />
+							<?php the_post_thumbnail(); ?>
 						</div>
 						<p>
 							 <?php echo substr(get_the_excerpt(),0,300); ?>
