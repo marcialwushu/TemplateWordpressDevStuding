@@ -34,6 +34,8 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
+
+                    <!-- insert logo -->
                     <?php 
                     
                     $custom_logo_id = get_theme_mod('custom-logo');
