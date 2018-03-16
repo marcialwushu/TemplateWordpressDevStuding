@@ -195,8 +195,8 @@ function Mytheme_sidebar(){
 			'description' => 'this is my Sidebar Area',
 			'before_widget' => '<li id="%1$s" class="widget %2$s">',
 			'after_widget' => '</li>',
-			'before_title' => '<h1 class="widget-title">',
-			'after_title' => '</h1>'
+			'before_title' => '<h5 class="widget-title">',
+			'after_title' => '</h5>'
 	));
 
 }
