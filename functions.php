@@ -195,8 +195,8 @@ function Mytheme_sidebar(){
 			'name' =>'Sidebar',
 			'id' => 'sidebar-1',
 			'description' => 'this is my Sidebar Area',
-			'before_widget' => '<li id="%1$s" class="widget %2$s">',
-			'after_widget' => '</li>',
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget' => '</aside>',
 			'before_title' => '<h5 class="widget-title">',
 			'after_title' => '</h5>'
 	));
@@ -204,6 +204,59 @@ function Mytheme_sidebar(){
 }
 
 add_action('widgets_init', 'Mytheme_sidebar');
+
+
+///////////////////////Footer Widgets////////////////////////////
+
+function Footer_widgets(){
+	register_sidebar(
+		array(
+			'name' =>'Footer1',
+			'id' => 'footer-1',
+			'description' => 'Footer 1 Area',
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget' => '</aside>',
+			'before_title' => '<h5 class="widget-title">',
+			'after_title' => '</h5>'
+	));
+
+	register_sidebar(
+		array(
+			'name' =>'Footer2',
+			'id' => 'footer-2',
+			'description' => 'Footer 2 Area',
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget' => '</aside>',
+			'before_title' => '<h5 class="widget-title">',
+			'after_title' => '</h5>'
+	));
+
+	register_sidebar(
+		array(
+			'name' =>'Footer3',
+			'id' => 'footer-3',
+			'description' => 'Footer 3 Area',
+			'before_widget' => '<uside id="%1$s" class="widget %2$s">',
+			'after_widget' => '</uside>',
+			'before_title' => '<h5 class="widget-title">',
+			'after_title' => '</h5>'
+	));
+
+	register_sidebar(
+		array(
+			'name' =>'Footer4',
+			'id' => 'footer-4',
+			'description' => 'Footer 4 Area',
+			'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+			'after_widget' => '</aside>',
+			'before_title' => '<h5 class="widget-title">',
+			'after_title' => '</h5>'
+	));
+
+}
+
+add_action('widgets_init', 'Footer_widgets');
+
 
 
 ?>
