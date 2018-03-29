@@ -258,5 +258,11 @@ function Footer_widgets(){
 add_action('widgets_init', 'Footer_widgets');
 
 
+//////////////Background/////////////////////
+
+
+add_theme_support('custom-background');
+
+
 
 ?>

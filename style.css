@@ -20,12 +20,12 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /* === prettify === */
 @import url('../js/google-code-prettify/prettify.css');
 /* === fontawesome === */
-@import url('font-awesome.css');
+@import url('css/font-awesome.css');
 /* === custom icon === */
-@import url('custom-fonts.css');
+@import url('css/custom-fonts.css');
 /* ==== overwrite bootstrap standard ==== */
-@import url('overwrite.css');
-@import url('animate.css');
+/*@import url('css/overwrite.css');
+@import url('css/animate.css'); */
 
 /* ===================================
 1. General
