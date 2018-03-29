@@ -19,8 +19,8 @@
 
 
 			<?php 
-					$custom_query = new WP_Query('type=post&posts_per_page');
-						
+			
+			$custom_query = new WP_QUERY('type=post&posts_per_page');
 			
 			if( $custom_query -> have_posts()): 
 					while( $custom_query -> have_posts()): $custom_query -> the_post();
@@ -57,7 +57,7 @@
 				
 				
 				<div id="pagination">
-				<?php //the_posts_pagination(); 
+					<?php //the_posts_pagination(); 
 						the_posts_pagination(
 							array(
 								'mid_size' => '2',
@@ -68,10 +68,9 @@
 						);
 					
 					
-				?>
+					?>
 				</div>
 			</div>
-			<!-- sidebar widget -->
 			<?php get_sidebar(); ?>
 		</div>
 	</div>

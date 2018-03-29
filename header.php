@@ -1,4 +1,3 @@
-
 <html <?php language_attributes(); ?> >
 <head>
 <meta charset=<?php bloginfo('charset'); ?> >
@@ -35,7 +34,6 @@
                         <span class="icon-bar"></span>
                     </button>
 
-                    <!-- insert logo -->
                     <?php 
                     
                     $custom_logo_id = get_theme_mod('custom-logo');
@@ -46,8 +44,7 @@
 
                     <img src="<?php echo $image[0]; ?>">
 
-
-                    <?php /*<a class="navbar-brand" href="index.html"><span>M</span>oderna</a> */?>
+                    <?php /*<a class="navbar-brand" href="index.html"><span>M</span>oderna</a> */ ?>
                 </div>   
                 
                 <div class="navbar-collapse collapse">

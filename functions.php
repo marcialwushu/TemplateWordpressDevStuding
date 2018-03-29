@@ -176,6 +176,7 @@ class BootstrapNavMenuWalker extends Walker_Nav_Menu {
 
 add_theme_support('post-thumbnails');
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
 function Mytheme_logo_setup(){
 	add_theme_support('custom-logo',array(
@@ -186,6 +187,7 @@ function Mytheme_logo_setup(){
 }
 
 add_action('after_setup_theme','Mytheme_logo_setup');
+
 
 function Mytheme_sidebar(){
 	register_sidebar(
@@ -202,5 +204,6 @@ function Mytheme_sidebar(){
 }
 
 add_action('widgets_init', 'Mytheme_sidebar');
+
 
 ?>
