@@ -176,17 +176,20 @@ class BootstrapNavMenuWalker extends Walker_Nav_Menu {
 
 add_theme_support('post-thumbnails');
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////Logo/////////////////////////
 
-function Mytheme_logo_setup(){
+function Mytheme_logo_setup() {
 	add_theme_support('custom-logo',array(
-		'height' =>50,
-		'width' =>150,
-		'flex-width' =>true,
-	));
+	'height' =>100,
+	'width' =>150,
+	'flex-width' =>true,
+	'flex-height' =>true,
+	) );
 }
 
 add_action('after_setup_theme','Mytheme_logo_setup');
+
+//////////////////Sidebar////////////////////////////
 
 
 function Mytheme_sidebar(){
