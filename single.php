@@ -45,6 +45,15 @@
 				
 				?>
 				
+				<?php 
+
+					if(comments_open() ){
+						comments_template();
+					} else {
+						echo "Comments are closed";
+					}
+
+				?>
 				
 				
 			</div>
